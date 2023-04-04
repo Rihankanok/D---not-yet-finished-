@@ -1,6 +1,9 @@
 #include <iostream>
-int main(int argc, char const *argv[])
+#include "Intro.h"
+
+
+int main()
 {
-    std::cout<< "Hello World!" << std::endl;
+    IntroMessage();
     return 0;
 }
