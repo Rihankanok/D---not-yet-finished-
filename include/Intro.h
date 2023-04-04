@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <string>
-#include <windows.h>
+#include <cstdlib>
 
 void IntroMessage() {
     std::string Intro = R"(
@@ -18,8 +18,11 @@ void IntroMessage() {
 
     if (answer == "yes")
     {
-        PlaySound(TEXT("Main_Menu.wav"), NULL, SND_FILENAME | SND_ASYNC);
-        system("pause");
+        system("cls");
+    }
+    else
+    {
+        std::cout << "Farewell then.\n";
     }
 }
 
